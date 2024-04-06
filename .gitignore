@@ -1,0 +1,8 @@
+# LaTeX Processing Files
+*.aux
+*.fdb_latexmk
+*.log
+*.gz
+*.toc
+*.fls
+*.pdf
