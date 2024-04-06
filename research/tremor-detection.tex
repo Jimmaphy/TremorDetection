@@ -1,9 +1,12 @@
-\documentclass{proc}
+\documentclass{article}
 
+\usepackage[margin=2.5cm]{geometry}
 \usepackage[dutch]{babel}
 \usepackage{babelbib}
+\usepackage{multicol}
+\usepackage{hyperref}
 
-\title{Het op Technische Wijze Detecteren van Tremoren met de Mogelijkheid Hierop te Reageren}
+\title{Het op Technische Wijze Detecteren van Essentiële Tremoren met de Mogelijkheid Hierop te Reageren}
 \author{Wesley van Schaijk}
 \date{7 april 2024}
 
@@ -15,15 +18,20 @@
 
 \tableofcontents
 
-\input{./sections/introduction}
-\input{./sections/tremor}
-\input{./sections/detection}
-\input{./sections/prototyping}
-\input{./sections/application}
-\input{./sections/conclusion}
-\input{./sections/discussion}
+\begin{multicols}{2}
+    \input{./sections/introduction}
+    \input{./sections/tremor}
+    \input{./sections/detection}
+    \input{./sections/prototyping}
+    \input{./sections/application}
+    \input{./sections/conclusion}
+    \input{./sections/discussion}
+\end{multicols}
 
+{
+\raggedright
 \bibliographystyle{babunsrt}
 \bibliography{tremor-detection}
+}
 
 \end{document}
