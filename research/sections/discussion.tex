@@ -1,2 +1,83 @@
 \section{Discussie}
 \label{section:discussion}
+
+Tijd om informeel terug te kijken op het onderzoek. 
+Als mij een aantal maanden geleden was gevraagd hoe het onderzoek zou lopen,
+had ik absoluut niet geantwoord dat het op deze manier was.
+Ieder stap die ik heb genomen werd met vol enthousiasme ontvangen,
+door alle partijen die hebben bijgedragen aan dit document.
+Zelf partijen die uiteindelijk niet zijn teruggekomen in het document.
+Er is een heel interview geweest met ActivInsights over de GENEActiv;
+ondanks dat dit een verkooppraatje was, hebben ze wel de tijd genomen om alles uit te leggen.
+Voor een onderzoek geschreven voor 2,5 studiepunt (70 uur),
+was het simpelweg te duur en uitgebreid om verder nog iets met hun product te doen.
+
+\subsection*{Persoonlijke Ervaring}
+
+Het doen van een onderzoek op deze schaal was extreem leerzaam,
+het is een simplistische manier om te zeggen, maar het is de waarheid.
+En dan is dit relatief nog een klein onderzoek; een hobby onderzoek,
+het nastreven van een interesse die ontstond door mijn eigen diagnose en een idee dat 's nachts ontstond.
+
+Iedereen is zo behulpzaam geweest tijdens het proces,
+en dit zal zeker te maken hebben met het feit dat ik nog op school zit.
+Het is mij al eerder duidelijk geworden dat deuren dat meer voor je open staan dan zodra je in het beroepenveld zit.
+Daarom ben ik blij dat ik deze kans heb genomen, ondanks dat er weinig nieuwe informatie naar buiten is gekomen.
+Uiteindelijk is het een samenvattend onderzoek, op heel hoog niveau.
+Maar misschien blijkt het idee dat ik die ene nacht had, zo gek nog niet te wezen.
+
+Tijd is een concept dat altijd te kort komt. Iedereen heeft altijd meer tijd nodig,
+en dit onderzoek is daar geen uitzondering in. 70 uur had ik voor dit onderzoek; 2,5 studiepunt.
+En ik durf te zeggen dat ik daar flink overheen ben gegaan. Ik heb niet bijgehouden of zo,
+en vind het onnodig om met zulke cijfers te gaan pronken. Maar ik denk wel dat het de passie voor het onderwerp liet zien.
+En ik denk oprecht, dat ik heel trots mag zijn op het eindresultaat,
+komende vanuit een tweedejaars hbo-ICT student.
+
+\subsection*{Snelheid}
+
+Anne Bouwmeester, een medisch student uit mijn vriendenkring, 
+heeft voor het onderzoek met mij gespard over het idee.
+Ze gaf aan het idee, hoewel niet direct toepasbaar, zeker interessant vond om te onderzoek.
+Haar enige zorg was de snelheid. Je moet heel snel kunnen reageren op een trilling.
+
+Uit het onderzoek is gebleken dat trilling van ET tussen de 4Hz en 12Hz \cite{frontiers2022}.
+Dit houdt in dat er 4 tot 12 keer per seconde een trilling is.
+De snelheid van de seriële poort van de Arduino is in het prototype ingesteld op een snelheid 9600.
+Dit is een zogenoemde baudrate; het aantal bits dat per seconde kan worden verstuurd.
+
+Een integer op de Arduino Uno R3 is 2 bytes groot, een float 4 bytes.
+Laten we even van de laatste uitgaan,
+dan is het theoretische limit $9600 / (4 * 8) = 9600 / 32 = 300$ berichten per seconde.
+Het idee om 12 berichten te lezen, en 12 te schrijven; zou prima moeten lukken.
+
+\subsection*{Data Science}
+
+Mischa Beckers, lector Data Science aan de HZ University of Applied Sciences, 
+heeft tijdens een gesprek dat wij hadden over de toepasbaarheid van dit project,
+een blik geworpen op de data die wordt geproduceerd door een EMG.
+
+Tijdens het gesprek heb ik verteld dat de ontwikkeling van, klachten door, en verloop van ET,
+anders is voor vrijwel iedere patiënt. Dit wordt ook ondersteund door onderzoek
+\cite{knf2022,erasmus2022,elsevier2022,frontiers2022,sips2024,activinsights2022}.
+Dit maakt het moeilijk om voorspellingsmodellen te maken.
+
+Echter zorgt de data die je uit een EMG krijgt, wel voor heel veel testdata.
+Dus er is zeker potentie, vooral als de data goed gelabeld is.
+Je zou per activiteit een model kunnen maken voor het voorspellen van een tremor.
+Het zou zeker interessant zijn om mogelijkheden hierin te bekijken,
+net zoals het live kunnen voorspellen van deze trillingen,
+dan zou je misschien op nieuwe variabelen kunnen komen die effect hebben op de tremor.
+Dit in combinatie met het feit dat alcohol effect heeft op de intensiteit van een tremor \cite{erasmus2022,elsevier2022},
+Iets dat mijn neuroloog tijdens mijn eigen diagnose ook aangaf.
+Je kan dus echt hele uitgebreide modellen maken en dit bijna eindeloos uitbreiden.
+
+\subsection*{Ethiek}
+
+Een discussie die gevoerd dient te worden,
+mocht het originele idee over geluidsonderdrukking verder worden uitgewerkt, is ethiek.
+Er moet een manier gevonden om de patiënt een schok de spieren van de patiënt in te sturen,
+op de regelmaat van de trillen. Hoe klein deze schok ook wezen mag,
+is het de vraag of dit wenselijk en menselijk is.
+Ik ben een ICT-student die een uitstapje maakt naar de medische wereld met dit onderzoek,
+en heb simpelweg niet de vaardigheid om hier een oordeel op te geven.
+Dit zou vanuit iemand anders moeten komen.

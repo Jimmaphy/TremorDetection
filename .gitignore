@@ -9,3 +9,6 @@
 *.blg
 *.out
 research/*.pdf
+
+# Arduino
+.vscode/
